@@ -1,0 +1,126 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome8",
+    "definitions": {
+        "Welcome8": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "users": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/User"
+                    }
+                }
+            },
+            "required": [
+                "users"
+            ],
+            "title": "Welcome8"
+        },
+        "User": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "$ref": "#/definitions/ID"
+                },
+                "firstName": {
+                    "$ref": "#/definitions/FirstName"
+                },
+                "lastName": {
+                    "$ref": "#/definitions/LastName"
+                },
+                "skillmap": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Skillmap"
+                    }
+                }
+            },
+            "required": [
+                "firstName",
+                "id",
+                "lastName",
+                "skillmap"
+            ],
+            "title": "User"
+        },
+        "Skillmap": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "skill": {
+                    "$ref": "#/definitions/Skill"
+                }
+            },
+            "required": [
+                "id",
+                "skill"
+            ],
+            "title": "Skillmap"
+        },
+        "FirstName": {
+            "type": "string",
+            "enum": [
+                "viajaya",
+                "Mounika",
+                "Kumareii",
+                "Johnson",
+                "Rama",
+                "John",
+                "Nicole",
+                "krishna"
+            ],
+            "title": "FirstName"
+        },
+        "ID": {
+            "type": "string",
+            "enum": [
+                "U02",
+                "U03",
+                "U04",
+                "U06",
+                "U16",
+                "U18",
+                "U23",
+                "U584",
+                "U69"
+            ],
+            "title": "ID"
+        },
+        "LastName": {
+            "type": "string",
+            "enum": [
+                "jason",
+                "Badola",
+                "Sadhukhan",
+                "TestPut",
+                "Rama",
+                "Doe",
+                "jones",
+                "krishna"
+            ],
+            "title": "LastName"
+        },
+        "Skill": {
+            "type": "string",
+            "enum": [
+                "springggg",
+                "java987",
+                "java updatePKK",
+                "Spring Tool",
+                "java update",
+                "Wow",
+                "UIDevlop",
+                "trainingselenium",
+                "java90",
+                "Websighners"
+            ],
+            "title": "Skill"
+        }
+    }
+}

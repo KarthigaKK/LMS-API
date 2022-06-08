@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="83" time="64.019">
+<testcase classname="To verify API automation with rest assured" name="To verify DB Validation - Put Method" time="16.18">
+<system-out><![CDATA[Given Skill User want to execute PUT operation for "/Skills" for DB Validation.passed
+When Skill User submit the PUT request in SQL DB............................passed
+Then Data base validation falied due to invalid database credentials........passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service - Delete Method" time="3.05">
+<system-out><![CDATA[Given Skill User want to execute DELETE operation for "/Skills".............passed
+When Skill User DELETE the skill 146........................................passed
+Then Skill User get 200 success Status code.................................passed
+Then Skill User deleted success reuqest schema validation...................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service - Delete Method 2" time="0.461">
+<system-out><![CDATA[Given Skill User want to execute DELETE operation for "/Skills".............passed
+When Skill User DELETE the skill 2234.......................................passed
+Then Skill User get 200 success Status code.................................passed
+Then Skill User deleted success reuqest schema validation...................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method" time="0.425">
+<system-out><![CDATA[Given Skill User want to execute DELETE operation for "/Skills".............passed
+When Skill User DELETE the skill 2793 for invalid skillid...................passed
+Then Skill User get 401 unauthorized Status code............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method 2" time="0.418">
+<system-out><![CDATA[Given Skill User want to execute DELETE operation for "/Skills".............passed
+When Skill User DELETE the skill 1567 for invalid skillid...................passed
+Then Skill User get 401 unauthorized Status code............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method 3" time="0.939">
+<system-out><![CDATA[Given Skill User want to execute DELETE operation for "/Skills".............passed
+When Skill User DELETE the skill 3007.......................................passed
+Then Skill User get 404 skill not found Status code.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method 4" time="0.415">
+<system-out><![CDATA[Given Skill User want to execute DELETE operation for "/Skills".............passed
+When Skill User DELETE the skill 2988.......................................passed
+Then Skill User get 404 skill not found Status code.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method 5" time="0.553">
+<system-out><![CDATA[Given Skill User want to execute DELETE operation for "/Skills".............passed
+When Skill User DELETE the skill 2013.......................................passed
+Then Skill User get 500 Internal server error as skill mapped to user.......passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method 6" time="0.42">
+<system-out><![CDATA[Given Skill User want to execute DELETE operation for "/Skills".............passed
+When Skill User DELETE the skill 2483.......................................passed
+Then Skill User get 500 Internal server error as skill mapped to user.......passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service - Get Method" time="0.689">
+<system-out><![CDATA[Given Skill User want to execute GET operation for "/Skills"................passed
+When Skill User submit the GET request......................................passed
+Then Skill User should get 200 success Status code..........................passed
+Then Skill User success validate response schema............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for singleuser endpoint - Get Method" time="0.406">
+<system-out><![CDATA[Given Skill User want to execute GET operation for "/Skills/2760"...........passed
+When Skill User submit the GET request......................................passed
+Then Skill User should get 200 success Status code..........................passed
+Then Skill User Single skill success validate response schema...............passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for singleuser endpoint - Get Method 2" time="0.389">
+<system-out><![CDATA[Given Skill User want to execute GET operation for "/Skills/2760AA".........passed
+When Skill User submit the GET request......................................passed
+Then Skill User should get 400 invalid Status code..........................passed
+Then Skill User invalid skillid validate response schema....................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for singleuser endpoint - Get Method 3" time="0.368">
+<system-out><![CDATA[Given Skill User want to execute GET operation for "/Skills/11111"..........passed
+When Skill User submit the GET request......................................passed
+Then Skill User should get 404 not found Status code........................passed
+Then Skill User notfound validate response schema...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify unauthorized Rest Service - Get Method" time="0.367">
+<system-out><![CDATA[Given Skill User want to execute GET operation for "/Skills/"...............passed
+When Skill User submit the GET request for invalid user.....................passed
+Then Skill User should get 401 unauthorized Status code.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for invalid endpoint - Get Method" time="0.392">
+<system-out><![CDATA[Given Skill User want to execute GET invalid endpoint for "/Skills1/".......passed
+When Skill User submit the GET request......................................passed
+Then Skill User should 404 not found Status code............................passed
+Then Skill User invalidurl validate response schema.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service - Post Method" time="1.976">
+<system-out><![CDATA[Given Skill User perform POST operation for "/Skills".......................passed
+When Skill User pass the data from given sheetname "Skill"..................passed
+Then Skill User validate response schema....................................passed
+Then Skill User should get 201 success code.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify unauthorized Rest Service - Get Method" time="1.149">
+<system-out><![CDATA[Given Skill User perform POST operation for "/Skills".......................passed
+When Skill User pass the data from given sheetname "Skill" as invalid user..passed
+Then Skill User should get 401 unauthorized code............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for invalid endpoint - Get Method" time="1.152">
+<system-out><![CDATA[Given Skill User want to execute POST invalid endpoint for "/Skills1/"......passed
+When Skill User pass the data from given sheetname "Skill"..................passed
+Then Skill User should 404 not found code...................................passed
+Then Skill User validate invalid url response schema........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint - Put Method" time="0.387">
+<system-out><![CDATA[Given Skill User want to execute PUT operation for "/Skills"................passed
+When Skill User submit the PUT request for update  "selenium update" for "3".passed
+Then Skill User should get 201 success Status code along with response body.passed
+Then Skill User update request schema validation............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint - Put Method 2" time="0.388">
+<system-out><![CDATA[Given Skill User want to execute PUT operation for "/Skills"................passed
+When Skill User submit the PUT request for update  "java update" for "9"....passed
+Then Skill User should get 201 success Status code along with response body.passed
+Then Skill User update request schema validation............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint as invalid user - Put Method" time="0.354">
+<system-out><![CDATA[Given Skill User want to execute PUT operation for "/Skills"................passed
+When Skill User submit the PUT request for update  "selenium update" for "3" as invalid user.passed
+Then Skill User should get 401 Unauthorized Status code along with response body.passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint - Put Method" time="0.413">
+<system-out><![CDATA[Given Skill User want to execute PUT operation for "/Skills"................passed
+When Skill User submit the PUT request for update  "selenium update" for "12345".passed
+Then Skill User should get 404 not found Status code along with response body.passed
+Then Skill User skill not found schema validation...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint - Put Method 2" time="0.44">
+<system-out><![CDATA[Given Skill User want to execute PUT operation for "/Skills"................passed
+When Skill User submit the PUT request for update  "java" for "3"...........passed
+Then Skill User should get 400 bad request Status code along with response body.passed
+Then Skill User update existing skill name response schema validation.......passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify UserSkillMap API automation with rest assured" name="List all users details by SKILL_ID Valid end point- Get Method" time="2.63">
+<system-out><![CDATA[Given User click GET operation for "/UsersSkillsMap/3" for getting list all user details by skill.passed
+When User do GET request to List all user details by the skill id...........passed
+Then User get success Status code 200 with response body....................passed
+Then validate success all user details response with schema validation......passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify UserSkillMap API automation with rest assured" name="List all users details by SKILL_ID invalid skill id - Get Method" time="0.441">
+<system-out><![CDATA[Given User click GET operation for "/UsersSkillsMap/90" for getting list all user details by invalid skill.passed
+When User do GET request to List all user details by the invalid skill id...passed
+Then User get not found Status code  404 with error message in response body.passed
+Then validate not found skill response with schema validation...............passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify UserSkillMap API automation with rest assured" name="List all users with all skill details Valid end point- Get Method" time="2.587">
+<system-out><![CDATA[Given User execute GET operation for "/UserSkillsMap" for getting list of details.passed
+When User do GET request and got the list of details........................passed
+Then User get 200 success Status code with response body....................passed
+Then validate success response with schema validation.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify UserSkillMap API automation with rest assured" name="List all users with all skill details invalid end point - Get Method" time="0.376">
+<system-out><![CDATA[Given User try GET operation for "/UserSkillsMap1" invalid end point........passed
+When User do GET request for listing all users all skill details using invalid end point.passed
+Then User get 404 not found Status code with error message..................passed
+Then validate not found response with schema validation.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify UserSkillMap API automation with rest assured" name="List user with the skill details Valid end point- Get Method" time="0.382">
+<system-out><![CDATA[Given User click GET operation for "/UserSkillsMap/U69" for getting list of details.passed
+When User do GET request to List user with the skill details................passed
+Then User see 200 success Status code with response body....................passed
+Then validate success details response with schema validation...............passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify UserSkillMap API automation with rest assured" name="List user with the skill details invalid end point - Get Method" time="0.361">
+<system-out><![CDATA[Given User click GET operation for "/UserSkillsMap/H65" invalid end point...passed
+When User do GET request to List user with the skill details using invalid userid.passed
+Then User get 404 not found Status code with error message in response......passed
+Then validate not found user response with schema validation................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service - Delete Method" time="0.39">
+<system-out><![CDATA[Given Skill User API want to execute DELETE operation for "/Skills".........passed
+When Skill User API DELETE the skill "2793".................................passed
+Then Skill User API get 200 success Status code.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service - Delete Method 2" time="0.43">
+<system-out><![CDATA[Given Skill User API want to execute DELETE operation for "/Skills".........passed
+When Skill User API DELETE the skill "1567".................................passed
+Then Skill User API get 200 success Status code.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method" time="0.42">
+<system-out><![CDATA[Given Skill User API want to execute DELETE operation for "/Skills".........passed
+When Skill User API DELETE the skill "2793" for invalid user................passed
+Then Skill User API get 401 unauthorized Status code........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method 2" time="0.407">
+<system-out><![CDATA[Given Skill User API want to execute DELETE operation for "/Skills".........passed
+When Skill User API DELETE the skill "1567" for invalid user................passed
+Then Skill User API get 401 unauthorized Status code........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify UserSkill API Rest Service - Get Method" time="0.851">
+<system-out><![CDATA[Given User execute GET operation for "/UserSkills"..........................passed
+When User do the GET request................................................passed
+Then User receive 200 success Status code...................................passed
+Then validate schema for get all UserSkill request..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify UserSkill API Rest Service for single UserSkill - Get Method" time="0.454">
+<system-out><![CDATA[Given User execute GET operation for "/UserSkills/US3222"...................passed
+When User do the GET request................................................passed
+Then User receive 200 success Status code...................................passed
+Then validate schema for single UserSkill request...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify UserSkill API unauthorized Rest Service - Get Method" time="0.382">
+<system-out><![CDATA[Given User execute GET operation for "/UserSkills/".........................passed
+When User submit the GET request as invalid user............................passed
+Then User get user skill API 401 unauthorized Status code...................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify UserSkill API Rest Service  invalid end point - Get Method" time="0.354">
+<system-out><![CDATA[Given User want to execute GET invalid url "/UserSkill/"....................passed
+When User do the GET request................................................passed
+Then User get 404 not found Status code.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service - Post Method for UserSkillMap API" time="0.46">
+<system-out><![CDATA[Given User perform POST operation in UserSkillMap API "/UserSkills".........passed
+When User pass the UserSkill data from given sheetname "UserSkill" and rownumber 0.passed
+Then User get the status code as 201 success code...........................passed
+Then User Post UserSkill API success schema validate........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service - Post Method for UserSkillMap API 2" time="0.437">
+<system-out><![CDATA[Given User perform POST operation in UserSkillMap API "/UserSkills".........passed
+When User pass the UserSkill data from given sheetname "UserSkill" and rownumber 1.passed
+Then User get the status code as 201 success code...........................passed
+Then User Post UserSkill API success schema validate........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service - Post Method for UserSkillMap API 3" time="0.395">
+<system-out><![CDATA[Given User perform POST operation in UserSkillMap API "/UserSkills".........passed
+When User pass the UserSkill data from given sheetname "UserSkill" and rownumber 2.passed
+Then User get the status code as 201 success code...........................passed
+Then User Post UserSkill API success schema validate........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service - Post Method for UserSkillMap API 4" time="0.433">
+<failure message="&#13;&#10;Expected: The content to match the given JSON schema.&#10;error: object instance has properties which are not allowed by the schema: [&quot;details&quot;,&quot;message&quot;,&quot;timestamp&quot;]&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome7&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;additionalProperties&quot;&#10;    unwanted: [&quot;details&quot;,&quot;message&quot;,&quot;timestamp&quot;]&#10;error: object has missing required properties ([&quot;months_of_exp&quot;,&quot;skill_id&quot;,&quot;user_id&quot;,&quot;user_skill_id&quot;])&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome7&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;required&quot;&#10;    required: [&quot;months_of_exp&quot;,&quot;skill_id&quot;,&quot;user_id&quot;,&quot;user_skill_id&quot;]&#10;    missing: [&quot;months_of_exp&quot;,&quot;skill_id&quot;,&quot;user_id&quot;,&quot;user_skill_id&quot;]&#10;&#13;&#10;     but: was &quot;{\n    \&quot;timestamp\&quot;: \&quot;2022-06-08T02:42:17.501+00:00\&quot;,\n    \&quot;message\&quot;: \&quot;SkillId - 2015 Not Found !!\&quot;,\n    \&quot;details\&quot;: \&quot;uri=/UserSkills\&quot;\n}&quot;" type="java.lang.AssertionError"><![CDATA[Given User perform POST operation in UserSkillMap API "/UserSkills".........passed
+When User pass the UserSkill data from given sheetname "UserSkill" and rownumber 3.passed
+Then User get the status code as 201 success code...........................passed
+Then User Post UserSkill API success schema validate........................failed
+
+StackTrace:
+java.lang.AssertionError: 
+Expected: The content to match the given JSON schema.
+error: object instance has properties which are not allowed by the schema: ["details","message","timestamp"]
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome7"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "additionalProperties"
+    unwanted: ["details","message","timestamp"]
+error: object has missing required properties (["months_of_exp","skill_id","user_id","user_skill_id"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome7"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["months_of_exp","skill_id","user_id","user_skill_id"]
+    missing: ["months_of_exp","skill_id","user_id","user_skill_id"]
+
+     but: was "{\n    \"timestamp\": \"2022-06-08T02:42:17.501+00:00\",\n    \"message\": \"SkillId - 2015 Not Found !!\",\n    \"details\": \"uri=/UserSkills\"\n}"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at stepDefinitions.UserSkillMap_API.UserSkillAPI_Post_UserSkill_Steps.user_post_user_skill_api_success_schema_validate(UserSkillAPI_Post_UserSkill_Steps.java:96)
+	at ✽.User Post UserSkill API success schema validate(file:///C:/Users/VISHAKAN/eclipse-workspace/RestAssuredLMSAPI/Features/UserSkillMap_API/UserSkillAPI_Post_UserSkill.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify unauthorized Rest Service - Get Method for UserSkillMap API" time="0.405">
+<system-out><![CDATA[Given User perform POST operation in UserSkillMap API "/UserSkills".........passed
+When User pass the UserSkill data from given sheetname "UserSkill" and rownumber 0 as invalid user.passed
+Then User should get 401 unauthorized code..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify unauthorized Rest Service - Get Method for UserSkillMap API 2" time="0.387">
+<system-out><![CDATA[Given User perform POST operation in UserSkillMap API "/UserSkills".........passed
+When User pass the UserSkill data from given sheetname "UserSkill" and rownumber 1 as invalid user.passed
+Then User should get 401 unauthorized code..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify unauthorized Rest Service - Get Method for UserSkillMap API 3" time="0.388">
+<system-out><![CDATA[Given User perform POST operation in UserSkillMap API "/UserSkills".........passed
+When User pass the UserSkill data from given sheetname "UserSkill" and rownumber 2 as invalid user.passed
+Then User should get 401 unauthorized code..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify unauthorized Rest Service - Get Method for UserSkillMap API 4" time="0.381">
+<system-out><![CDATA[Given User perform POST operation in UserSkillMap API "/UserSkills".........passed
+When User pass the UserSkill data from given sheetname "UserSkill" and rownumber 3 as invalid user.passed
+Then User should get 401 unauthorized code..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for invalid endpoint - Get Method for UserSkillMap API" time="0.418">
+<system-out><![CDATA[Given User want to execute POST invalid endpoint in UserSkillMap API "/UserSkills1/".passed
+When User pass the UserSkill data from given sheetname "UserSkill" and rownumber 0.passed
+Then User should 404 notfound code..........................................passed
+Then User Post UserSkill url NotFound Schema validate.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for invalid endpoint - Get Method for UserSkillMap API 2" time="0.501">
+<system-out><![CDATA[Given User want to execute POST invalid endpoint in UserSkillMap API "/UserSkills1/".passed
+When User pass the UserSkill data from given sheetname "UserSkill" and rownumber 1.passed
+Then User should 404 notfound code..........................................passed
+Then User Post UserSkill url NotFound Schema validate.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for invalid endpoint - Get Method for UserSkillMap API 3" time="0.42">
+<system-out><![CDATA[Given User want to execute POST invalid endpoint in UserSkillMap API "/UserSkills1/".passed
+When User pass the UserSkill data from given sheetname "UserSkill" and rownumber 2.passed
+Then User should 404 notfound code..........................................passed
+Then User Post UserSkill url NotFound Schema validate.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for invalid endpoint - Get Method for UserSkillMap API 4" time="0.464">
+<system-out><![CDATA[Given User want to execute POST invalid endpoint in UserSkillMap API "/UserSkills1/".passed
+When User pass the UserSkill data from given sheetname "UserSkill" and rownumber 3.passed
+Then User should 404 notfound code..........................................passed
+Then User Post UserSkill url NotFound Schema validate.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint - Put Method" time="0.489">
+<system-out><![CDATA[Given User want to execute PUT operation for UserSkillAPI "/UserSkills".....passed
+When User submit the PUT request as 10 for "US185", "U02", 2................passed
+Then User get 201 success Status code along with response body..............passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint - Put Method 2" time="0.488">
+<system-out><![CDATA[Given User want to execute PUT operation for UserSkillAPI "/UserSkills".....passed
+When User submit the PUT request as 12 for "US1566", "U03", 3...............passed
+Then User get 201 success Status code along with response body..............passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint as invalid user - Put Method" time="0.369">
+<system-out><![CDATA[Given User want to execute PUT operation for UserSkillAPI "/UserSkills".....passed
+When User submit the PUT request as  10 for "US185", "U02", 2 invalid user..passed
+Then User get 401 Unauthorized Status code..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint as invalid user - Put Method 2" time="0.428">
+<system-out><![CDATA[Given User want to execute PUT operation for UserSkillAPI "/UserSkills".....passed
+When User submit the PUT request as  12 for "US1566", "U03", 3 invalid user.passed
+Then User get 401 Unauthorized Status code..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint - Put Method" time="0.437">
+<system-out><![CDATA[Given User want to execute PUT operation for UserSkillAPI "/UserSkills1"....passed
+When User submit the PUT request as 10 for "US185", "U02", 2................passed
+Then User get 404 not found Status code along with response body............passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint - Put Method 2" time="0.407">
+<system-out><![CDATA[Given User want to execute PUT operation for UserSkillAPI "/UserSkills1"....passed
+When User submit the PUT request as 12 for "US1566", "U03", 3...............passed
+Then User get 404 not found Status code along with response body............passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service - Delete Method" time="0.441">
+<system-out><![CDATA[Given User want to execute DELETE operation for "/Users"....................passed
+When User DELETE the "U3347"................................................passed
+Then User get 200 success Status code.......................................passed
+Then User deleted successfully and validated through json schema............passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service - Delete Method 2" time="0.42">
+<system-out><![CDATA[Given User want to execute DELETE operation for "/Users"....................passed
+When User DELETE the "U3346"................................................passed
+Then User get 200 success Status code.......................................passed
+Then User deleted successfully and validated through json schema............passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method" time="0.44">
+<system-out><![CDATA[Given User want to execute DELETE operation for "/Users"....................passed
+When User DELETE the "2793" for invalid user................................passed
+Then User get 401 unauthorized Status code..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method 2" time="0.356">
+<system-out><![CDATA[Given User want to execute DELETE operation for "/Users"....................passed
+When User DELETE the "1567" for invalid user................................passed
+Then User get 401 unauthorized Status code..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method 3" time="0.386">
+<system-out><![CDATA[Given User want to execute DELETE operation for "/Users"....................passed
+When User DELETE the "3007".................................................passed
+Then User get 404 User not found Status code................................passed
+Then User not found are validated through json schema.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method 4" time="0.426">
+<system-out><![CDATA[Given User want to execute DELETE operation for "/Users"....................passed
+When User DELETE the "2988".................................................passed
+Then User get 404 User not found Status code................................passed
+Then User not found are validated through json schema.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method 5" time="0.414">
+<system-out><![CDATA[Given User want to execute DELETE operation for "/Users"....................passed
+When User DELETE the "U1387"................................................passed
+Then User get 500 Internal server error as skill mapped to user.............passed
+Then User cant delete user mapped to skill are validated through json schema.passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify invalid user Rest Service - Delete Method 6" time="0.411">
+<system-out><![CDATA[Given User want to execute DELETE operation for "/Users"....................passed
+When User DELETE the "U451".................................................passed
+Then User get 500 Internal server error as skill mapped to user.............passed
+Then User cant delete user mapped to skill are validated through json schema.passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service - Get Method" time="0.97">
+<system-out><![CDATA[Given User try to execute GET operation for "/Users"........................passed
+When User submit the GET request............................................passed
+Then User should get 200 success Status code................................passed
+Then User validated with response schema....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for singleuser endpoint - Get Method" time="1.107">
+<system-out><![CDATA[Given User try to execute GET operation for "/Users/U18"....................passed
+When User submit the GET request............................................passed
+Then User should get 200 success Status code................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for singleuser endpoint - Get Method 2" time="0.426">
+<system-out><![CDATA[Given User want to execute GET operation for "/Users/11111".................passed
+When User submit the GET request............................................passed
+Then User should get 404 not found Status code..............................passed
+Then User notfound validate response schema.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify unauthorized Rest Service - Get Method" time="0.428">
+<system-out><![CDATA[Given User want to execute GET operation for "/Users/"......................passed
+When User submit the GET request for invalid user...........................passed
+Then User should get 401 unauthorized Status code...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for invalid endpoint - Get Method" time="0.365">
+<system-out><![CDATA[Given User want to execute GET invalid endpoint for "/Users1/"..............passed
+When User submit the GET request............................................passed
+Then User should 404 not found Status code..................................passed
+Then User invalidurl validate response schema...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint - Put Method" time="0.434">
+<system-out><![CDATA[Given User want to execute POST operation for "/Users"......................passed
+When User pass the data from given sheetname "User" and rownumber 0.........passed
+Then User should get 201 success code.......................................passed
+Then User validate the success message with json schema.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint - Put Method 2" time="0.42">
+<system-out><![CDATA[Given User want to execute POST operation for "/Users"......................passed
+When User pass the data from given sheetname "User" and rownumber 1.........passed
+Then User should get 201 success code.......................................passed
+Then User validate the success message with json schema.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for invalid endpoint - Get Method" time="0.415">
+<system-out><![CDATA[Given User want to execute POST invalid endpoint for "/Users1/".............passed
+When User pass the data from given sheetname "User" and rownumber 0.........passed
+Then User should 404 not found code.........................................passed
+Then User validate invalid url by response schema...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for invalid endpoint - Get Method 2" time="0.469">
+<system-out><![CDATA[Given User want to execute POST invalid endpoint for "/Users1/".............passed
+When User pass the data from given sheetname "User" and rownumber 2.........passed
+Then User should 404 not found code.........................................passed
+Then User validate invalid url by response schema...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for invalid endpoint - Get Method 3" time="0.429">
+<system-out><![CDATA[Given User want to execute POST invalid endpoint for "/Users/"..............passed
+When User pass the data from given sheetname "User" and rownumber 2.........passed
+Then User should 400 visa status required...................................passed
+Then User get bad request 400 for phone number already exist................passed
+Then User get bad request 400 for timezone required.........................passed
+Then User validate visa status required by response schema..................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for invalid endpoint - Get Method 4" time="0.408">
+<system-out><![CDATA[Given User want to execute POST invalid endpoint for "/Users/"..............passed
+When User pass the data from given sheetname "User" and rownumber 3.........passed
+Then User should 400 visa status required...................................passed
+Then User get bad request 400 for phone number already exist................passed
+Then User get bad request 400 for timezone required.........................passed
+Then User validate visa status required by response schema..................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for invalid endpoint - Get Method 5" time="0.436">
+<system-out><![CDATA[Given User want to execute POST invalid endpoint for "/Users/"..............passed
+When User pass the data from given sheetname "User" and rownumber 4.........passed
+Then User should 400 visa status required...................................passed
+Then User get bad request 400 for phone number already exist................passed
+Then User get bad request 400 for timezone required.........................passed
+Then User validate visa status required by response schema..................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint - Put Method" time="0.383">
+<system-out><![CDATA[Given User want to execute PUT operation for "/Users".......................passed
+When User submit the PUT request for update "Rama,Rama","3456723456","Houston","CST","H4" for "U18".passed
+Then User should get 201 success Status code along with response body.......passed
+Then User updated successfully schema validation............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint - Put Method 2" time="0.387">
+<system-out><![CDATA[Given User want to execute PUT operation for "/Users".......................passed
+When User submit the PUT request for update "krishna,krishna","3425678234","Houston","EST","H4" for "U69".passed
+Then User should get 201 success Status code along with response body.......passed
+Then User updated successfully schema validation............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint as invalid user - Put Method" time="0.359">
+<system-out><![CDATA[Given User want to execute PUT operation for "/Users".......................passed
+When User submit the PUT request "Rama,Rama","3456723456","Houston","CST","H4" for "U18" as invalid user.passed
+Then User should get 401 Unauthorized Status code along with response body..passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user endpoint as invalid user - Put Method 2" time="0.366">
+<system-out><![CDATA[Given User want to execute PUT operation for "/Users".......................passed
+When User submit the PUT request "krishna,krishna","3425678234","Houston","EST","H4" for "U69" as invalid user.passed
+Then User should get 401 Unauthorized Status code along with response body..passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user not found - Put Method" time="0.392">
+<system-out><![CDATA[Given User want to execute PUT operation for "/Users".......................passed
+When User submit the PUT request for update "Rama,Rama","3456723456","Houston","CST","H4" for "Z19".passed
+Then User should get 404 update user not found Status code along with response body.passed
+Then User not found schema validation.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user not found - Put Method 2" time="0.398">
+<system-out><![CDATA[Given User want to execute PUT operation for "/Users".......................passed
+When User submit the PUT request for update "krishna,krishna","3425678234","Houston","EST","H4" for "Y17".passed
+Then User should get 404 update user not found Status code along with response body.passed
+Then User not found schema validation.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user missing required fields - Put Method" time="0.386">
+<system-out><![CDATA[Given User want to execute PUT operation for "/Users".......................passed
+When User submit the PUT request for update "Rama,Rama","12348797","","","" for "U18".passed
+Then User get 400 bad request Status code along with response body..........passed
+Then User missing required fields for update response schema validation.....passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify API automation with rest assured" name="To verify Rest Service for update user missing required fields - Put Method 2" time="0.398">
+<system-out><![CDATA[Given User want to execute PUT operation for "/Users".......................passed
+When User submit the PUT request for update "krishna,krishna","34278234","","","" for "U69".passed
+Then User get 400 bad request Status code along with response body..........passed
+Then User missing required fields for update response schema validation.....passed
+]]></system-out>
+</testcase>
+</testsuite>
