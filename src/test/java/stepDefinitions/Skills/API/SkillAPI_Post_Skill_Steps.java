@@ -103,7 +103,7 @@ public class SkillAPI_Post_Skill_Steps extends BaseClass {
 		logger.info( "**************Schema Validation************************* ");
 		logger.info( "*************************************************************** ");
 		
-		for (int i = 0; i <skillPostResponse.size()-1; i++) {
+		for (int i = 0; i <skillPostResponse.size(); i++) {
 			response = skillPostResponse.get(i);
 			String responseBody = response.getBody().asString();
 			int statusCode = response.getStatusCode();
@@ -120,7 +120,7 @@ public class SkillAPI_Post_Skill_Steps extends BaseClass {
 		logger.info( "**************Schema Validation************************* ");
 		logger.info( "*************************************************************** ");
 		
-		for (int i = 0; i <skillPostResponse.size()-1; i++) {
+		for (int i = 0; i <skillPostResponse.size(); i++) {
 			response = skillPostResponse.get(i);
 			String responseBody = response.getBody().asString();
 			int statusCode = response.getStatusCode();
